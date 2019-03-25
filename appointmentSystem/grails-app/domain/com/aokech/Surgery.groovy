@@ -9,6 +9,7 @@ int telephone
 int numberOfPatients
 String description
 String openingTime
+Boolean registeringNewPatients
 
     static constraints = {
       name nullable: false, blank:false
@@ -18,5 +19,6 @@ String openingTime
       numberOfPatients nullable: false, blank:false, max: 50
       description nullable: false, blank:false, maxSize: 5000
       openingTime nullable: false, blank:false
+      registeringNewPatients nullable: false, blank:false
     }
 }
