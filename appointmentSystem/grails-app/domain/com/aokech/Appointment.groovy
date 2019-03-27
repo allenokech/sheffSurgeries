@@ -7,6 +7,10 @@ String appTime
 int appDuration
 String roomNumber
 
+Patient patient
+static belongsTo = Doctor
+static hasMany = [surgeries:Surgery]
+
     static constraints = {
       appDate nullable: false, blank:false
       appTime nullable: false, blank:false

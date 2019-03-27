@@ -11,6 +11,9 @@ String description
 String openingTime
 Boolean registeringNewPatients
 
+static belongsTo = Appointment
+static hasMany = [nurses:Nurse, doctors:Doctor, patients:Patient, receptionists:Receptionist]
+
     static constraints = {
       name nullable: false, blank:false
       address nullable: false, blank:false

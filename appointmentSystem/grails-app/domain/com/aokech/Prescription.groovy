@@ -10,6 +10,7 @@ double totalCost
 Date dateIssued
 Boolean patientPaying
 
+static belongsTo = Doctor, Patient
 
     static constraints = {
       pharmacyName nullable: false, blank:false

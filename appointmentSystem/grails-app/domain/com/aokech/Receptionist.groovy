@@ -8,6 +8,8 @@ String recepUsername
 String recepPassword
 int recepPhone
 
+static belongsTo = Surgery
+
     static constraints = {
       recepName nullable: false, blank:false
       recepEmail nullable: false, blank:false

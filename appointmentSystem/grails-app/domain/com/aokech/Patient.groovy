@@ -9,6 +9,9 @@ String patientID
 Date dateRegistered
 int patientPhone
 
+Appointment appointment
+static hasMany = [prescriptions:Prescription, doctors:Doctor, surgeries:Surgery]
+
     static constraints = {
       patientName nullable: false, blank:false
       patientAddress nullable: false, blank:false

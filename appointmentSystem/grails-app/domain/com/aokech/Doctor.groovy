@@ -10,7 +10,13 @@ String password
 String doctorOffice
 int doctorPhone
 String bio
+
+static belongsTo= Surgery
+static hasMany = [prescriptions:Prescription, patients:Patient, nurses:Nurse, appointments:Appointment]
+
+
     static constraints = {
+
       fullName nullable: false, blank:false
       qualification nullable: false, blank:false
       position nullable: false, blank:false
