@@ -2,13 +2,11 @@ package com.aokech
 
 class Receptionist {
 
-String recepName
-String recepEmail
-String recepUsername
-String recepPassword
-String recepPhone
-
-static belongsTo = Surgery
+  String recepName
+  String recepEmail
+  String recepUsername
+  String recepPassword
+  String recepPhone
 
     static constraints = {
       recepName nullable: false, blank:false

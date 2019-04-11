@@ -2,17 +2,16 @@ package com.aokech
 
 class Surgery {
 
-String name
-String address
-String postcode
-String telephone
-int numberOfPatients
-String description
-String openingTime
-Boolean registeringNewPatients
+  String name
+  String address
+  String postcode
+  String telephone
+  int numberOfPatients
+  String description
+  String openingTime
+  Boolean registeringNewPatient
 
-static belongsTo = Appointment
-static hasMany = [nurses:Nurse, doctors:Doctor, patients:Patient, receptionists:Receptionist]
+  static hasMany=[nurses: Nurse, doctors: Doctor, patients: Patient, receptionists: Receptionist]
 
     static constraints = {
       name nullable: false, blank:false
@@ -22,6 +21,6 @@ static hasMany = [nurses:Nurse, doctors:Doctor, patients:Patient, receptionists:
       numberOfPatients nullable: false, blank:false, max: 50
       description nullable: false, blank:false, maxSize: 5000
       openingTime nullable: false, blank:false
-      registeringNewPatients nullable: false, blank:false
+      registeringNewPatient nullable: false, blank:false
     }
 }

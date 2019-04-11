@@ -2,14 +2,13 @@ package com.aokech
 
 class Appointment {
 
-Date appDate
-String appTime
-int appDuration
-String roomNumber
+  Date appDate
+  String appTime
+  int appDuration
+  String roomNumber
 
-Patient patient
-static belongsTo = Doctor
-static hasMany = [surgeries:Surgery]
+  Patient thePatient
+  static hasMany=[surgeries: Surgery]
 
     static constraints = {
       appDate nullable: false, blank:false

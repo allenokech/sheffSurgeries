@@ -1,16 +1,16 @@
 package com.aokech
 
 class Patient {
-String patientName
-String patientAddress
-String patientResidence
-Date patientDob
-String patientID
-Date dateRegistered
-String patientPhone
+  String patientName
+  String patientAddress
+  String patientResidence
+  Date patientDob
+  String patientID
+  Date dateRegistered
+  String patientPhone
 
-Appointment appointment
-static hasMany = [prescriptions:Prescription, doctors:Doctor, surgeries:Surgery]
+  static hasMany=[prescriptions: Prescription, doctors: Doctor, surgeries: Surgery]
+  static belongsTo=[Surgery, Doctor]
 
     static constraints = {
       patientName nullable: false, blank:false

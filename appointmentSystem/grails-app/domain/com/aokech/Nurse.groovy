@@ -2,14 +2,14 @@ package com.aokech
 
 class Nurse {
 
-String nurseName
-String qualifications
-String nurseEmail
-String nurseOffice
-String nursePhone
+  String nurseName
+  String qualifications
+  String nurseEmail
+  String nurseOffice
+  String nursePhone
 
-static belongsTo = Surgery
-static hasMany = [doctors:Doctor]
+  static hasMany=[doctors: Doctor]
+  static belongsTo=Doctor
 
     static constraints = {
       nurseName nullable: false, blank:false

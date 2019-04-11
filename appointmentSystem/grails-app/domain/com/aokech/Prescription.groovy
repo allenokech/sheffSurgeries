@@ -2,15 +2,13 @@ package com.aokech
 
 class Prescription {
 
-String pharmacyName
-int prescripNumber
-String medicine
-int daysSupply
-double totalCost
-Date dateIssued
-Boolean patientPaying
-
-static belongsTo = Doctor, Patient
+  String pharmacyName
+  int prescripNumber
+  String medicine
+  int daysSupply
+  String totalCost
+  Date dateIssued
+  Boolean patientPaying
 
     static constraints = {
       pharmacyName nullable: false, blank:false
