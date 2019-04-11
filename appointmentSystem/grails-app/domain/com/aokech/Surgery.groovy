@@ -11,7 +11,7 @@ class Surgery {
   String openingTime
   Boolean registeringNewPatient
 
-  static hasMany=[nurses: Nurse, doctors: Doctor, patients: Patient, receptionists: Receptionist]
+  static hasMany=[nurses: Nurse, doctors: Doctor, patients: Patient, receptionists: Receptionist, appointments: Appointment]
 
     static constraints = {
       name nullable: false, blank:false

@@ -8,6 +8,8 @@ class Receptionist {
   String recepPassword
   String recepPhone
 
+  Surgery theSurgery
+
     static constraints = {
       recepName nullable: false, blank:false
       recepEmail nullable: false, blank:false

@@ -12,7 +12,7 @@ class Doctor {
   String bio
 
   static hasMany=[prescriptions: Prescription, patients: Patient, nurses: Nurse, appointments: Appointment]
-
+  Surgery theSurgery
 
     static constraints = {
 

@@ -10,6 +10,9 @@ class Prescription {
   Date dateIssued
   Boolean patientPaying
 
+  Doctor theDoctor
+  Patient thePatient
+
     static constraints = {
       pharmacyName nullable: false, blank:false
       prescripNumber nullable: false, blank:false

@@ -10,6 +10,7 @@ class Nurse {
 
   static hasMany=[doctors: Doctor]
   static belongsTo=Doctor
+  Surgery theSurgery
 
     static constraints = {
       nurseName nullable: false, blank:false
